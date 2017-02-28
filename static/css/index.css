@@ -65,7 +65,11 @@ a:visited{
   text-decoration:none;
   color : black;
 }
+.md-theme-default .TemplateBackgorund a:not(.md-button),
+.md-theme-default .TemplateBackgorund a:not(.md-button):hover{
+  color : black;
+}
 
-#app a:not(.md-button):not(.md-bottom-bar-item):hover{
-  text-decoration: none;
+.TemplateBackgorund a:not(.md-button):not(.md-bottom-bar-item):hover{
+   text-decoration:none;
 }

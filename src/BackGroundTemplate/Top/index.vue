@@ -16,13 +16,10 @@
         <route></route>
     </div>
     <div class="TopLast">
-        <el-button type="text">
+        <md-button>
             <i class="el-icon-edit" @click="dialogTableVisible = true"></i>
-        </el-button>        
+        </md-button>
     </div>
-    <el-dialog title="Login" v-model="dialogTableVisible">
-        
-    </el-dialog>
 </div>Top
 </template>
 <script>

@@ -104,14 +104,14 @@ export default{
     height : 50px;
 }
 
-.MainTitle>a{
+.md-theme-default .TemplateBackgorund  .MainTitle>a{
     height : 100%;
     width : 100%;
     color: #00A5E5;
 
 }
 
-.SubTitle>a{
+.md-theme-default .TemplateBackgorund .SubTitle>a{
 
     height : 30px;
     width : 100%;
@@ -134,7 +134,7 @@ ul>li, ul>li>a {
     align-items: center;
 }
 
-a:hover{
+.md-theme-default .TemplateBackgorund a:hover{
     color:black;
     background-color: #D4D1CC;
 }
