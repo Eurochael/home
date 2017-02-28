@@ -58,7 +58,6 @@ export default {
     height : 50px;
     top : 0;
     left : 0;
-    background-color: rgba(255,255,255,0.3);
     z-index: 99;
     display: flex;
     flex-wrap: nowrap;
@@ -68,6 +67,8 @@ export default {
 
 .TopBackground:hover{
     background-color: black;
+    border-bottom : none;
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
 }
 
 
