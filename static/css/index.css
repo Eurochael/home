@@ -47,17 +47,11 @@
 *::after {
     box-sizing: border-box;
 }
-div:not(.gmnoprint){
-    width : inherit;
-}
 
-html {
-    font-size: 100%;
-}
 
 *{
   user-select: none;
-    font-family: 'Spoqa Han Sans', 'Noto Sans KR', 'Sans-serif';
+  font-family: 'Spoqa Han Sans', 'Noto Sans KR', 'Sans-serif';
 }
 
 body, html, #app{
@@ -66,20 +60,8 @@ body, html, #app{
   margin:0;
 }
 
-a, a:hover, a:visited{
+a, a:hover, 
+a:visited{
   text-decoration:none;
   color : black;
-}
-
-.el-table::before{
-    border-bottom : 2px solid #E7222E;
-}
-.el-table__header{
-  border-bottom : 2px solid #66C9EF;
-  background-color: transparent;
-}
-
-.el-table{
-    border-top : 2px solid #E7222E;
-    width : 100%;
 }
