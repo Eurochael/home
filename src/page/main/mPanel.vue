@@ -1,9 +1,7 @@
 <template>
 <div class="mPanel_background" :class="{reverse : GetData.isRv}">
-    <div class="mPanel_Content">
-        <slot name="ContentDiv"></slot>
-    </div>
-    <div class="mPanel_bkImg" v-lazy:background-image="GetData.test">
+
+    <div class="mPanel_bkImg" v-lazy:background-image="GetData.img">
         <slot name="ImgDiv"></slot>
     </div>    
 </div>
@@ -17,7 +15,7 @@ export default {
   ],
   data () {
     return {
-      test:'./static/img/hire/handshake.jpg'
+      img:'./static/img/hire/handshake.jpg'
     }
   }
 }
@@ -26,12 +24,14 @@ export default {
 
 <style scoped>
 .mPanel_background{
-  height : 33vh;
+  height : 40vh;
   display: flex;
+  justify-content: center;
+  background-color: #E6E6E6;
   
 }
 .mPanel_Content{
-    height : 33vh;
+    height : 100%;
     width : 40%;
     display: flex;
     justify-content: center;    
@@ -39,7 +39,7 @@ export default {
     
 }
 .mPanel_bkImg{
-    height : 33vh;
+    height : 100%;
     width : 60%;
     background-position: center center;
     background-size: cover;
@@ -47,6 +47,14 @@ export default {
 }
 .mPanel_background.reverse{
     flex-direction: row-reverse;
+}
+@media(max-width:799px){
+  .mPanel_Content{
+      display: none;
+    }
+    .mPanel_bkImg{
+        width : 100%;
+    }  
 }
           
 </style>
