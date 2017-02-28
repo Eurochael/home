@@ -1,7 +1,9 @@
 <template>
-  <div class="hello">
-    
+<div>
+  <div>
+    background
   </div>
+</div>
 </template>
 
 <script>

@@ -65,3 +65,7 @@ a:visited{
   text-decoration:none;
   color : black;
 }
+
+#app a:not(.md-button):not(.md-bottom-bar-item):hover{
+  text-decoration: none;
+}
