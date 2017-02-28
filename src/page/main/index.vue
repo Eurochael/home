@@ -23,6 +23,11 @@ export default {
 
 <style scoped>
 .testHeight{
-  min-height : 100vh;
+  height : 100vh;
+}
+@media(max-width:799px){
+  .testHeight{
+      height : 500px;
+    }  
 }
 </style>
