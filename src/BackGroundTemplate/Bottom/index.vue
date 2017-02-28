@@ -30,6 +30,7 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
 }
 .COPYRIGHT{
     display: flex;
