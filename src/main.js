@@ -22,7 +22,7 @@ Vue.use(VueLazyload, {
   // the default is ['scroll', 'wheel', 'mousewheel', 'resize', 'animationend', 'transitionend']
   listenEvents: [ 'scroll' ]
 })
-
+Vue.use(VueMaterial)
 
 
 
