@@ -1,16 +1,16 @@
 import Vue from 'vue'
 import VueLazyload from 'vue-lazyload'
-
-
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.css'
 
 
 import router from './router'
 import {store} from './store'
 
-
-
-
 import App from './BackGroundTemplate/'
+
+
+
 
 Vue.config.productionTip = true
 
