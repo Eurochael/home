@@ -66,7 +66,7 @@ export default{
     border-bottom : 2px solid rgba(227, 0, 14, 0.7);
 }
 
-.white{
+.md-theme-default .TemplateBackgorund a.white{
     color : white;
 }
 @media screen and (max-width : 799px){
