@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import router from './router'
-
+import {store} from './store'
 import App from './BackGroundTemplate/'
 
 Vue.config.productionTip = true
@@ -8,6 +8,7 @@ Vue.config.productionTip = true
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
