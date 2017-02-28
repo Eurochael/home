@@ -1,0 +1,85 @@
+/*제주고딕*/
+/*font-family: 'Jeju Gothic', sans-serif;*/
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+/*제주한라산*/
+/*font-family: 'Jeju Hallasan', cursive;*/
+@import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+/*제주명조*/
+/*font-family: 'Jeju Myeongjo', serif;*/
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+/*koPub 바탕*/
+/*font-family: 'KoPub Batang', serif;*/
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+/*나눔 브러쉬*/
+/*font-family: 'Nanum Brush Script', cursive;*/
+@import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+/*나눔 고딕*/
+/*font-family: 'Nanum Gothic', sans-serif;*/
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*나눔 고딕 코딩*/
+/*font-family: 'Nanum Gothic Coding', monospace;*/
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+/*나눔 명조*/
+/*font-family: 'Nanum Myeongjo', serif;*/
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+/*나눔 펜*/
+/*font-family: 'Nanum Pen Script', cursive;*/
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+/*Noto Sans*/
+/*font-family: 'Noto Sans KR', sans-serif;*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*하나*/
+/*font-family: 'Hanna', sans-serif;*/
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+/*스포카 한 산스*/
+/*font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';*/
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+@font-face {
+    font-family: 'sans-serif';
+    src: url('/static/css/good.ttf');
+}
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+div:not(.gmnoprint){
+    width : inherit;
+}
+
+html {
+    font-size: 100%;
+}
+
+*{
+  user-select: none;
+    font-family: 'Spoqa Han Sans', 'Noto Sans KR', 'Sans-serif';
+}
+
+body, html, #app{
+  min-width: 100%;
+  min-height: 100%;
+  margin:0;
+}
+
+a, a:hover, a:visited{
+  text-decoration:none;
+  color : black;
+}
+
+.el-table::before{
+    border-bottom : 2px solid #E7222E;
+}
+.el-table__header{
+  border-bottom : 2px solid #66C9EF;
+  background-color: transparent;
+}
+
+.el-table{
+    border-top : 2px solid #E7222E;
+    width : 100%;
+}
