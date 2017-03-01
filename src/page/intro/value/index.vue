@@ -139,7 +139,6 @@ export default {
         margin-bottom : 20px;
     }
     .imgDv{
-        min-width : 300px;
         min-height : 100px;
     }
 }
