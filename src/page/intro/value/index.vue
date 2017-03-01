@@ -1,11 +1,13 @@
 <template>
 <div class="valueBack" id="value">
-    <div class="FlexBox">
-        <div class="main">
-            우리의 핵심 가치
-        </div>
-        <div class="sub">
-            Our Core Values
+     <div class="FlexBox">
+        <div class="lineBox">
+            <div class="main">
+                우리의 핵심 가치
+            </div>
+            <div class="sub">
+                Our Core Values
+            </div>
         </div>            
     </div>
     <div class="FlexBox2">
@@ -65,15 +67,10 @@ export default {
 .valueBack{
     height : auto;
     padding : 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    flex-direction: column;    
 }
 
 .valueBack .FlexBox2{
-    display: -ms-flexbox;
+    
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -98,11 +95,16 @@ export default {
     justify-content: center;
     align-items: center;    
     flex-direction: column;
-    border-left :10px solid black;
+
     margin-bottom : 20px;
-    padding-left: 10px;
+
 }
 
+
+.lineBox{
+    border-left :10px solid black;
+    padding-left: 10px;
+}
 .main{
     font-size: 4rem;
     line-height: 4rem;
