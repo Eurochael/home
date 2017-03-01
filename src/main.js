@@ -20,7 +20,7 @@ Vue.use(VueLazyload, {
   loading: '/static/img/icon/loading_spinner.gif',
   attempt: 1,
   // the default is ['scroll', 'wheel', 'mousewheel', 'resize', 'animationend', 'transitionend']
-  listenEvents: [ 'scroll' ]
+  listenEvents: [ 'scroll', 'wheel', 'mousewheel', 'resize', 'animationend', 'transitionend' ]
 })
 Vue.use(VueMaterial)
 

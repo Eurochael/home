@@ -35,10 +35,7 @@
 /*font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';*/
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
-@font-face {
-    font-family: 'sans-serif';
-    src: url('/static/css/good.ttf');
-}
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
 
 
 

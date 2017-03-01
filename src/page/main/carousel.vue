@@ -2,8 +2,8 @@
 <slider width="100%"
         height="100%"
         animation="fade"
-        :interval="3000"
-        :speed="1000">
+        :interval="4500"
+        :speed="500">
   <slider-item  v-for="(data, key) in DBS"
                 :key="key"
                 :style="{ backgroundColor: '#3f51b5' }">
@@ -59,7 +59,6 @@ export default{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-
     display: flex;
     justify-content: center;
     align-items: center;

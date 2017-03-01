@@ -104,10 +104,12 @@ export default{
     height : 50px;
 }
 
-.md-theme-default .TemplateBackgorund  .MainTitle>a{
+.md-theme-default .TemplateBackgorund  .MainTitle>a,  
+.md-theme-default .TemplateBackgorund .MainTitle>a:active{
     height : 100%;
     width : 100%;
     color: #00A5E5;
+    background-color: transparent;
 
 }
 
@@ -128,7 +130,7 @@ ul{
     list-style: none;
     padding : 0;
 }
-ul>li, ul>li>a {
+ul>li, ul>li>a, ul>li>a:active {
     display: flex;
     justify-content: center;
     align-items: center;
