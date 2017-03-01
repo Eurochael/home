@@ -102,7 +102,7 @@ export default {
 
 
 .lineBox{
-    border-left :10px solid black;
+    border-left :10px solid #E3000E;
     padding-left: 10px;
 }
 .main{
