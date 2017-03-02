@@ -3,12 +3,14 @@
     <titlePic></titlePic>
     <value></value>
     <history></history>
+    <Gmap></Gmap>
 </div>
 </template>
 <script>
 import titlePic from './titlePic'
 import value from './value'
 import history from './history'
+import Gmap from './map'
 
 export default {
   name: 'intro',
@@ -16,6 +18,7 @@ export default {
     titlePic,
     value,
     history,
+    Gmap,
   },
 }
 </script>
