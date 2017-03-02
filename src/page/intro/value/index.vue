@@ -11,7 +11,7 @@
         </div>            
     </div>
     <div class="FlexBox2">
-    <md-card md-with-hover v-for="(data, key) in lowDatas" :key="key">
+    <md-card md-with-hover v-for="(data, key) in lowDatas" :key="key" v-in-viewport>
         <md-card-header>
             <div class="md-title">{{data.title}}</div>
             <!--<div class="md-subhead">Subtitle here</div>-->
@@ -64,6 +64,10 @@ export default {
 </script>
 
 <style scoped>
+.bounceInLeft {
+  animation-name: bounceInLeft;    
+}
+
 .valueBack{
     height : auto;
     padding : 20px;

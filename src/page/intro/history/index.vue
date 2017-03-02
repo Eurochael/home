@@ -1,6 +1,6 @@
 <template>
 <div class="introHeight" id="history">
-     <div class="FlexBox">
+     <div class="FlexBox" v-in-viewport>
         <div class="lineBox">
             <div class="main">
                 제니스의 역사
@@ -190,8 +190,9 @@ export default {
     flex-direction: column;
     margin-top : 20px;
     margin-bottom : 20px;
-
 }
+
+
 .lineBox{
     border-left :10px solid #E3000E;
     padding-left: 10px;

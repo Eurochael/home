@@ -7,7 +7,7 @@
       <a slot="ImgDiv" 
         :href="mPDB.way"
          class="hoverTransition" 
-        :class="{coverColor : mPDB.col}">
+        :class="{coverColor : mPDB.col}" v-in-viewport='{ top: -100 }'>
         <div>
           <div class="ContentDivMain">{{mPDB.tit}}</div>
           <div class="ContentDivSub">{{mPDB.sub}}</div>
@@ -89,6 +89,24 @@ export default {
   background-color: rgba(255,255,255,0.7);
   color: black !important;
 }
+/*전환효과*/
+
+
+.hoverTransition.in-viewport {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: showcolorWhite;
+}
+
+@keyframes showcolorWhite {
+  50%{
+    background-color: rgba(255,255,255,0.7);
+    color: black !important;        
+  }
+}
+
+/*전환효과*/
+
 .ContentDivMain{
   font-size: 3rem;
   line-height: 3rem;

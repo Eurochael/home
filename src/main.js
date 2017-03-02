@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueLazyload from 'vue-lazyload'
+import inViewportDirective from 'vue-in-viewport-directive'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.css'
 
@@ -23,7 +24,7 @@ Vue.use(VueLazyload, {
   listenEvents: [ 'scroll', 'wheel', 'mousewheel', 'resize', 'animationend', 'transitionend' ]
 })
 Vue.use(VueMaterial)
-
+Vue.directive('in-viewport', inViewportDirective)
 
 
 

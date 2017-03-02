@@ -141,6 +141,7 @@ ul>li, ul>li>a, ul>li>a:active {
     background-color: #D4D1CC;
 }
 
+
 @media screen and (max-width : 799px){
     a:hover{
         color:#E6E6E6;

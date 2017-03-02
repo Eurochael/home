@@ -1,31 +1,37 @@
 <template>
-<div class="height">   
-     <div class="map">
+  <div id="maps">
+  <div class="FlexBox" v-in-viewport>
+    <div class="lineBox">
+      <div class="main">
+          연락처
+      </div>
+      <div class="sub">
+          CONTACT US
+      </div>
+    </div>
+  </div>
+  <div class="conBox">
+    <md-whiteframe md-elevation="24" class="map" v-in-viewport>
       <gmap-map
         height="100%"
         :center="center"
         :zoom="15">
         <gmap-marker
-          v-for="m in markers"
-          :position="m.position"
+          :position="center"
           :clickable="true"
           :draggable="true"
-          @click="center=m.position"
         ></gmap-marker>
       </gmap-map>
+    </md-whiteframe>
+    <div class="contentText">
+       xprtmxm
     </div>
+  </div>
 </div>
 </template>
 
 <style>
-    .height{
-        height : 100vh;
-    }
-    .map{
-        height : 500px;
-        width : 500px;
-        background-color: black;
-    }
+
     .vue-map-container{
         height : 100%;
     }
@@ -45,11 +51,50 @@
   export default {
     data () {
       return {
-        center: {lat: 37.0202830, lng: 127.4435390},
-        markers: [{
-          position: {lat: 37.0202830, lng: 127.4435390}
-        }]
+        center: {lat: 37.0202830, lng: 127.4435390}
       }
     }
   }
 </script>
+
+<style scoped>
+.map{
+    height : 500px;
+    width : 500px;
+    background-color: black;
+}
+/*타이틀 영역*/
+.FlexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+.lineBox{
+    border-left :10px solid #E3000E;
+    padding-left: 10px;
+    margin-bottom : 40px;
+}
+
+.main{
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom : 10px;
+}
+
+.sub{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+/*타이틀 영역*/
+.conBox{
+  display: flex;
+  justify-content: center;
+}
+.contentText{
+  margin-left: 20px;
+}
+</style>

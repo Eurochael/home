@@ -9,7 +9,7 @@
                 :style="{ backgroundColor: '#3f51b5' }">
     <div class="Slide_Background" v-lazy:background-image="data.img">
         <div class="FlexBox">
-            <div class="main">
+            <div class="main" v-in-viewport>
                 {{data.Title}}
             </div>
             <div class="sub">

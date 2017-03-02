@@ -1,6 +1,6 @@
 <template>
 <div v-lazy:background-image="img" class="introMainBack">
-    <div class="FlexBox">
+    <div class="FlexBox animated hinge flip" >
         <div class="main">
             상상을 현실로 만드는 기업
         </div>
@@ -22,6 +22,25 @@ export default {
 </script>
 
 <style scoped>
+/*전환효과*/
+
+
+.FlexBox.in-viewport.fully-in-viewport {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-name: showcolorWhite;
+}
+
+@keyframes showcolorWhite {
+  50%{
+    background-color: rgba(255,255,255,0.7);
+    color: black !important;        
+  }
+}
+
+/*전환효과*/
+
+
 .introMainBack{
     height : 100vh;
     width : 100%;

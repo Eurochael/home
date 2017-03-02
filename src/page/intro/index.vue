@@ -1,5 +1,5 @@
 <template>
-<div class="introHeight">
+<div class="introHeight" id="intro">
     <titlePic></titlePic>
     <value></value>
     <history></history>
@@ -27,4 +27,5 @@ export default {
 .introHeight{
     height : auto;
 }
+
 </style>
