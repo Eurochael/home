@@ -8,43 +8,38 @@
             <div class="sub">
                 History
             </div>
-        </div>            
-    </div>
-    <div class="contentDiv">
-        <div class="response">
-            <div v-for="(DB, key) in DBS" :key="key" class="warpping">
-                <div class="year">{{DB.YY}}</div>
-                <md-button class="md-icon-button md-raised md-dense" @click.native="clk(key)">
-                    <md-icon>add</md-icon>
-                </md-button>
-            </div>
         </div>
-        <div class="receive">
-            <div class="selYear">{{DBS[sYear].YY}}</div>
-            <Carousel3d ref="carousel">
-                    
-                <Slide v-for="(DB2, key) in DBS2[sYear]" :index="key" :key="key" :class="{isHideden : hddn(key)}">
+        <md-card class="contentDiv">
+            <md-tabs md-dynamic-height md-elevation=1 id="his">
+                <md-tab  
+                            v-for="(DB, key) in DBS" 
+                            :key="key"
+                            :id="DB.YY" 
+                            :md-label="DB.YY">
+                <div class="contFlex" >
+                    <md-whiteframe v-for="(DB2, key2) in DBS2[key]"
+                                    :key="key2"
+                                    md-elevation="9">
                     <figure>
                         <div v-lazy:background-image="DB2.img" class="imgDiv"></div>
                         <figcaption>
+                            <p class="moreThan">{{DB2.MM}}</p>
                             {{DB2.Title}}
                         </figcaption>
-                    </figure>                    
-                </Slide>
-            </Carousel3d>
-        </div>
-    </div>    
+                    </figure>                         
+                    </md-whiteframe>
+                    </div>        
+                </md-tab>
+            </md-tabs>
+        </md-card>                        
+    </div>
 </div>
 </template>
+
 <script>
-import { Carousel3d, Slide } from 'vue-carousel-3d'
 
 export default {
   name: 'history',
-  components:{
-    Carousel3d,
-    Slide
-  },
   data(){
       return{
           DBS:[
@@ -82,12 +77,6 @@ export default {
                     Title : '벤처 기업 선정',
                     img : '/static/img/intro/history/200911.png'
                 },
-                {
-                    MM : '11',
-                    Title : '벤처 기업 선정',
-                    img : '/static/img/intro/history/200911.png'
-                }                
-
               ],
               [//2010
                 {
@@ -171,40 +160,17 @@ export default {
       }
   },
   methods:{
-      clk(val){
-          this.sYear = val;
-          this.$refs.carousel.goSlide(0);
-      },
-      hddn(vla){
-          if(vla == 2 && this.sYear == 0){
-              return true;
-          } else{
-              return false;
-          };
-      }
   }
 }
 </script>
 
 <style>
-#history .carousel-3d-container figure {
-  margin:0;
-}
-
-#history .carousel-3d-container figcaption {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  bottom: 0;
-  position: absolute;
-  bottom: 0;
-  padding: 15px;
-  font-size: 12px;
-  min-width: 100%;
-  box-sizing: border-box;
-}
-#history .carousel-3d-slide.isHideden{
-    visibility: hidden !important;
+@media screen and (max-width:799px){
+    .md-tabs .md-tab-header{
+        padding : 0;
+        font-size: 0.5rem;
+        min-width : 40px;
+    }
 }
 </style>
 
@@ -215,6 +181,7 @@ export default {
     flex-direction: column;
 }
 
+/*타이틀 영역*/
 .FlexBox{
     display: flex;
     justify-content: center;
@@ -227,6 +194,7 @@ export default {
 .lineBox{
     border-left :10px solid #E3000E;
     padding-left: 10px;
+    margin-bottom : 40px;
 }
 
 .main{
@@ -239,61 +207,57 @@ export default {
     font-size: 2rem;
     line-height: 2rem;
 }
-
+/*타이틀 영역*/
 .contentDiv{
     display: flex;
     justify-content: center;
+    width : 800px;
 }
-.response{
+.contFlex{
+    width : 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    flex-wrap: nowrap;
     justify-content: space-around;
-    padding-right : 20px;
-    border-right : 5px solid black;
-    height : 100%;
-    width : 150px;
+}
+div.md-whiteframe{
+    width : 100%;
+}
+div.md-whiteframe:not(:last-child){
+    margin-bottom : 20px;
 }
 
-.receive{
-    width : 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+figure {
+  margin:0;
 }
-.selYear{
+
+figcaption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  padding-top : 0;
+  font-size: 12px;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.moreThan{
+    font-weight: bold;
     font-size: 2rem;
 }
 
-.warpping{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    
-}
-.year{
-    font-size: 1.7rem;
-    margin-right : 10px;
-}
-figure{
-    height : 100%;
-}
 .imgDiv{
-    height : 100%;
+    height : 25vh;
     width : 100%;
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center center;
-    background-color: white;
+    background-size: contain;
 }
-
-
 @media(max-width:799px){
-    .introHeight{
-        height : 70vh;
-    }
     .main{
         font-size: 2.3rem;
         line-height: 2.3rem;
@@ -302,8 +266,15 @@ figure{
         font-size: 1.8rem;
         line-height: 1.8rem;
     }
-    .selYear{
-        font-size: 1.5rem;
+    .contentDiv{
+        width : 310px;
+    }
+    .imgDiv{
+        height : 200px;
+    }
+    .moreThan{
+        font-weight: bold;
+        font-size: 1.2rem;
     }
 }
 </style>
