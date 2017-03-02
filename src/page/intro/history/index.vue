@@ -179,6 +179,7 @@ export default {
     display: flex;
     height : auto;
     flex-direction: column;
+    background-color: #F8F8F8;
 }
 
 /*타이틀 영역*/
@@ -187,7 +188,7 @@ export default {
     justify-content: center;
     align-items: center;    
     flex-direction: column;
-
+    margin-top : 20px;
     margin-bottom : 20px;
 
 }
