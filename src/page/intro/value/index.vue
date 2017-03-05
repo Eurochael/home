@@ -120,6 +120,18 @@ export default {
     line-height: 2rem;
 }
 
+/*전환효과*/
+/*v-in-viewport='{ top: -100 }'*/
+/*el.in-viewport{}*/
+/*전환효과*/
+
+/*전환효과*/
+.FlexBox2>.in-viewport{
+  animation-duration: 2s;
+  animation-fill-mode: both;  
+  animation-name: fadeInDown;
+}
+/*전환효과*/
 
 @media(max-width:799px){
     .main{
