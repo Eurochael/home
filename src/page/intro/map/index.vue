@@ -1,5 +1,5 @@
 <template>
-  <div id="maps">
+  <div id="location">
   <div class="FlexBox" v-in-viewport>
     <div class="lineBox">
       <div class="main">
@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="conBox">
-    <md-whiteframe md-elevation="24" class="map" v-in-viewport>
+    <md-whiteframe md-elevation="9" class="map" v-in-viewport>
       <gmap-map
         height="100%"
         :center="center"
@@ -23,7 +23,7 @@
         ></gmap-marker>
       </gmap-map>
     </md-whiteframe>
-    <div class="contentText">
+    <md-whiteframe md-elevation="9" class="contentText">
        <table>
          <tbody>
            <tr>
@@ -57,7 +57,7 @@
            </tr>
          </tbody>
        </table>
-    </div>
+    </md-whiteframe>
   </div>
 </div>
 </template>
@@ -124,9 +124,12 @@
 /*타이틀 영역*/
 .conBox{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .contentText{
-  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding : 10px;
 }
 </style>

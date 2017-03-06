@@ -37,10 +37,6 @@ export default{
                           addr: '/intro#location'
                       },                                            
                       {
-                          name: '비전',
-                          addr: '/intro#future'
-                      },                      
-                      {
                           name: '히스토리',
                           addr: '/intro#history'
                       },                                                                  
