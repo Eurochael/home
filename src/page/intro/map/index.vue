@@ -24,7 +24,39 @@
       </gmap-map>
     </md-whiteframe>
     <div class="contentText">
-       xprtmxm
+       <table>
+         <tbody>
+           <tr>
+             <td rowspan="2">
+              <i class="material-icons">location_city</i>
+             </td>
+             <td>
+              경기도 안성시 죽산면 용대길 144-34
+             </td>
+           </tr>
+           <tr>
+             <td>
+              144-34, Yongdae-gil, Juksan-myeon, Anseong-si, Gyeonggi-do, Korea.
+             </td>
+           </tr>
+           <tr>
+             <td>
+              <i class="material-icons">call</i>
+             </td>
+             <td>
+              +82-31-673-1039
+             </td>
+           </tr>
+           <tr>
+             <td>
+              <i class="material-icons">local_printshop</i>
+             </td>
+             <td>
+              +82-31-673-3039
+             </td>
+           </tr>
+         </tbody>
+       </table>
     </div>
   </div>
 </div>
