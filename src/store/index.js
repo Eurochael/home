@@ -10,9 +10,4 @@ export const store = new Vuex.Store({
         scrollY       : 0,
         productShow   : true,
     },
-    mutations : {
-        scrollTop () {
-            window.scrollTo(0,0);
-        }
-    }
 });

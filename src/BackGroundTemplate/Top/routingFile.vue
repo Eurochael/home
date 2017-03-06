@@ -9,7 +9,7 @@
 
 
 <template>
-<div class="routingBackground" @click="$store.commit('scrollTop')">
+<div class="routingBackground">
     <router-link v-for="(menu, key) in menus"
                  :key="key" 
                  :to="menu.addr" 

@@ -1,6 +1,6 @@
 <template>
 <router-link to="/" >
-    <div  class="Logo" :class="{hover : imageChange}" @click="$store.commit('scrollTop')"></div>
+    <div  class="Logo" :class="{hover : imageChange}" ></div>
 </router-link>
 </template>
 

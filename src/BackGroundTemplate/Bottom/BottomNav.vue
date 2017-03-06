@@ -1,7 +1,7 @@
 <template>
 <div class="BtmNavBackground">
     <ul v-for="menu in menus" class="btNav">
-        <li class="MainTitle" @click="$store.commit('scrollTop')">
+        <li class="MainTitle">
             <!--<router-link> -->
              <router-link :to="menu.addr" >
             {{menu.name}}
