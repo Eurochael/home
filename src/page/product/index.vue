@@ -2,7 +2,7 @@
 <div class="isFull">
     <div v-lazy:background-image="img" class="img">
         <div v-for="(btn, key) in btns"   
-             :style="btn"
+             :style="btn.p"
              :key="key"
              class="button animated infinite flash"></div>
     </div>
@@ -22,79 +22,79 @@ export default{
         return{
             img : '/static/img/product/samsung.jpg',
             btns :[
-                {
-                    left : '10%',
-                    top  : '70%'
-                },
-                {
-                    left : '15%',
-                    top  : '70%'
-                },
-                {
-                    left : '29.8%',
-                    top  : '38.3%'
-                },
-                {
-                    left : '32%',
-                    top  : '39%'
-                },
-                {
-                    left : '31.8%',
-                    top  : '48%'
-                },
-                {
-                    left : '31.5%',
-                    top  : '54%'
-                },
-                {
-                    left : '32%',
-                    top  : '66%'
-                },
-                {
-                    left : '37%',
-                    top  : '50%'
-                },
-                {
-                    left : '37%',
-                    top  : '44%'
-                },
-                {
-                    left : '50%',
-                    top  : '27.8%'
-                },
-                {
-                    left : '52%',
-                    top  : '45%'
-                },
-                {
-                    left : '71.5%',
-                    top  : '45%'
-                },
-                {
-                    left : '72.5%',
-                    top  : '59%'
-                },
-                {
-                    left : '73%',
-                    top  : '16%'
-                },
-                {
-                    left : '78.5%',
-                    top  : '17.5%'
-                },
-                {
-                    left : '83%',
-                    top  : '32%'
-                },
-                {
-                    left : '91.7%',
-                    top  : '46.5%'
-                },
-                {
-                    left : '87.5%',
-                    top  : '49%'
-                },
-            ]
+               {p : {
+                   left : '10%',
+                   top  : '70%'
+               }},
+               {p : {
+                   left : '15%',
+                   top  : '70%'
+               }},
+               {p : {
+                   left : '29.8%',
+                   top  : '38.3%'
+               }},
+               {p : {
+                   left : '32%',
+                   top  : '39%'
+               }},
+               {p : {
+                   left : '31.8%',
+                   top  : '48%'
+               }},
+               {p : {
+                   left : '31.5%',
+                   top  : '54%'
+               }},
+               {p : {
+                   left : '32%',
+                   top  : '66%'
+               }},
+               {p : {
+                   left : '37%',
+                   top  : '50%'
+               }},
+               {p : {
+                   left : '37%',
+                   top  : '44%'
+               }},
+               {p : {
+                   left : '50%',
+                   top  : '27.8%'
+               }},
+               {p : {
+                   left : '52%',
+                   top  : '45%'
+               }},
+               {p : {
+                   left : '71.5%',
+                   top  : '45%'
+               }},
+               {p : {
+                   left : '72.5%',
+                   top  : '59%'
+               }},
+               {p : {
+                   left : '73%',
+                   top  : '16%'
+               }},
+               {p : {
+                   left : '78.5%',
+                   top  : '17.5%'
+               }},
+               {p : {
+                   left : '83%',
+                   top  : '32%'
+               }},
+               {p : {
+                   left : '91.7%',
+                   top  : '46.5%'
+               }},
+               {p : {
+                   left : '87.5%',
+                   top  : '49%'
+               }},
+           ]
         }
     }
 }
