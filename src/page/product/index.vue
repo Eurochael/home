@@ -4,6 +4,7 @@
         <div v-for="(btn, key) in btns"   
              :style="btn.p"
              :key="key"
+             :class="btn.k"
              class="button animated infinite flash"></div>
     </div>
     <pTb></pTb>
@@ -22,79 +23,120 @@ export default{
         return{
             img : '/static/img/product/samsung.jpg',
             btns :[
-               {p : {
-                   left : '10%',
-                   top  : '70%'
-               }},
-               {p : {
-                   left : '15%',
-                   top  : '70%'
-               }},
-               {p : {
-                   left : '29.8%',
-                   top  : '38.3%'
-               }},
-               {p : {
-                   left : '32%',
-                   top  : '39%'
-               }},
-               {p : {
-                   left : '31.8%',
-                   top  : '48%'
-               }},
-               {p : {
-                   left : '31.5%',
-                   top  : '54%'
-               }},
-               {p : {
-                   left : '32%',
-                   top  : '66%'
-               }},
-               {p : {
-                   left : '37%',
-                   top  : '50%'
-               }},
-               {p : {
-                   left : '37%',
-                   top  : '44%'
-               }},
-               {p : {
-                   left : '50%',
-                   top  : '27.8%'
-               }},
-               {p : {
-                   left : '52%',
-                   top  : '45%'
-               }},
-               {p : {
-                   left : '71.5%',
-                   top  : '45%'
-               }},
-               {p : {
-                   left : '72.5%',
-                   top  : '59%'
-               }},
-               {p : {
-                   left : '73%',
-                   top  : '16%'
-               }},
-               {p : {
-                   left : '78.5%',
-                   top  : '17.5%'
-               }},
-               {p : {
-                   left : '83%',
-                   top  : '32%'
-               }},
-               {p : {
-                   left : '91.7%',
-                   top  : '46.5%'
-               }},
-               {p : {
-                   left : '87.5%',
-                   top  : '49%'
-               }},
+               {   k : 'btnB',
+                   p :  {
+                            left : '10%',
+                            top  : '70%'
+                        }
+               },
+               {   k : 'btnB',
+                   p :  {
+                            left : '15%',
+                            top  : '70%'
+                        }
+               },
+               {   k : 'btnB', 
+                   p :  {
+                            left : '29.8%',
+                            top  : '38.3%'
+                        }
+               },
+               {   k : 'btnR',
+                   p :  {
+                            left : '32%',
+                            top  : '39%'
+                        }
+               },
+               {   k : 'btnG',
+                   p :  {
+                            left : '31.8%',
+                            top  : '48%'
+                        }
+               },
+               {   k : 'btnB',
+                   p :  {
+                            left : '31.5%',
+                            top  : '54%'
+                        }
+               },
+               {   k : 'btnB', 
+                   p :  {
+                            left : '32%',
+                            top  : '66%'
+                        }
+               },
+               {   k : 'btnB', 
+                   p :  {
+                            left : '37%',
+                            top  : '50%'
+                        }
+               },
+               {   k : 'btnB', 
+                   p :  {
+                            left : '37%',
+                            top  : '44%'
+                        }
+               },
+               {   k : 'btnG', 
+                   p :  {
+                            left : '50%',
+                            top  : '27.8%'
+                        }
+               },
+               {   k : 'btnR', 
+                   p :  {
+                            left : '52%',
+                            top  : '45%'
+                        }
+               },
+               {   k : 'btnB', 
+                   p :  {
+                            left : '71.5%',
+                            top  : '45%'
+                        }
+               },
+               {   k : 'btnB', 
+                   p :  {
+                            left : '72.5%',
+                            top  : '59%'
+                        }
+               },
+               {   k : 'btnR', 
+                   p :  {
+                            left : '73%',
+                            top  : '16%'
+                        }
+               },
+               {   k : 'btnR', 
+                   p :  {
+                            left : '78.5%',
+                            top  : '17.5%'
+                        }
+               },
+               {   k : 'btnG', 
+                   p :  {
+                            left : '83%',
+                            top  : '32%'
+                        }
+               },
+               {   k : 'btnB', 
+                   p :  {
+                            left : '91.7%',
+                            top  : '46.5%'
+                        }
+               },
+               {   k : 'btnR', 
+                   p :  {
+                            left : '87.5%',
+                            top  : '49%'
+                        }
+               },
            ]
+        }
+    },
+    methods:{
+        tessst(){
+            location.href = "zzz"
         }
     }
 }
