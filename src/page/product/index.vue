@@ -8,6 +8,7 @@
              class="button animated infinite flash"></div>
     </div>
     <pTb></pTb>
+    <button @click="tessst">클릭입니다</button>
 </div>
 </template>
 
@@ -136,7 +137,7 @@ export default{
     },
     methods:{
         tessst(){
-            location.href = "zzz"
+            console.log(this.$router);
         }
     }
 }

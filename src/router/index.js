@@ -14,17 +14,17 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Main',
+      name: '메인',
       component: main
     },
     {
       path: '/intro',
-      name: 'introduce',
+      name: '소개',
       component: intro
     },
     {
       path: '/product',
-      name: 'product',
+      name: '제품',
       component: product
     }    
   ]

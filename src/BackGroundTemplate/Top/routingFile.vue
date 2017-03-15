@@ -10,9 +10,9 @@
 
 <template>
 <div class="routingBackground">
-    <router-link v-for="(menu, key) in menus"
+    <router-link v-for="(menu, key) in this.$router.options.routes"
                  :key="key" 
-                 :to="menu.addr" 
+                 :to="menu.path" 
                  :class="{ white: $store.state.TopHoverState }">
         {{menu.name}}
     </router-link>
@@ -22,24 +22,6 @@
 <script>
 export default{
     name : "Routing",
-    data() {
-        return{
-            menus : [
-                {
-                    name : "소개",
-                    addr : "/intro",
-                },
-                {
-                    name : "제품",
-                    addr : "/product",
-                },
-                {
-                    name : "채용",
-                    addr : "/hire",
-                }
-            ]
-        }
-    }
 }    
 </script>
 
